@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Foto } from './foto/fotos.model';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Wallpaper';
-  descricao = 'Aula de Angular começaste hoje';
-  seguir = "checked";
+  fotos:Foto[] = [
+    {
+    id: 1,
+    titulo: 'Windranger',
+    alt: 'Windrager Lyralei',
+    url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg/250px-Polar_Bear_-_Alaska_%28cropped%29.jpg',
+    descricao: 'Urso Polar'
+    }
+]
 }
