@@ -9,12 +9,15 @@
   </head>
   <body>
     <div class="container">
-      <app-foto
-      *ngFor="let f of fotos"
-      [url]="f.url"
-      [titulo]="f.titulo"
-      [descricao]="f.descricao">
-    </app-foto>
+      <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <img src="https://www.bacancytechnology.com/img/angular-imgs/side-bg1.jpg" class="rounded img-fluid float-left" alt="...">
+            <h6 class="card-subtitle mb-2 text-muted">{{ title }}</h6>
+            <p class="card-text">{{ descricao }}</p>
+            <a href="#" class="card-link">Curtir</a>
+            <input type="checkbox" class="card-link">Seguir
+          </div>
+        </div>
     </div>
   </body>
 </html>
